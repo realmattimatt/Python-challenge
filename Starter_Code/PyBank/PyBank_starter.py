@@ -12,6 +12,11 @@ os.chdir(r"c:/Users/mnmat/OneDrive/Desktop/Python-challenge/Starter_Code/PyBank"
 file_to_load = os.path.join("Resources", "budget_data.csv")  # Input file path
 file_to_output = os.path.join("analysis", "budget_analysis.txt")  # Output file path
 
+if os.path.exists(file_to_load):
+    print(f"File found: {file_to_load}")
+else:
+    print(f"File not found: {file_to_load}")
+
 # Define variables to track the financial data
 total_months = 0
 total_profit_loss = 0
@@ -20,7 +25,7 @@ greatest_increase = ("", float('-inf'))
 greatest_decrease = ("", float('inf'))
 
 
-# Add more variables to track other necessary financial data
+# Add more variables to track other necessary financial data"
 
 # Open and read the csv
 with open(file_to_load) as financial_data:
