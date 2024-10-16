@@ -6,7 +6,7 @@ import csv
 import os
 # Uncomment line 8 and 9 as needed. 
 # A path error was encountered on my personal device. I needed to use the os.getcwd and 
-# os.getcwd methods.
+# os.getcwd methods to run directly in VS Code terminal. Works perfect in Bash without lines 10 and 11.
 print(os.getcwd())
 os.chdir(r"c:/Users/mnmat/OneDrive/Desktop/Python-challenge/Starter_Code/PyBank")
 
