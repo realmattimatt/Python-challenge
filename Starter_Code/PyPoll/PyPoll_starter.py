@@ -59,7 +59,7 @@ with open(file_to_load) as election_data:
 with open(file_to_output, "w") as txt_file:
 
     # Print the total vote count (to terminal)
-    print("Election Results]\n")
+    print("\nElection Results\n")
     print(f"-------------------------\n")
     print(f"Total Votes: {total_votes}\n")
     print(f"-------------------------\n")
@@ -68,10 +68,10 @@ with open(file_to_output, "w") as txt_file:
     
 
     # Write the total vote count to the text file
-    txt_file.write("Election Results\n")
-    txt_file.write(f"-------------------------\n")
-    txt_file.write(f"Total Votes: {total_votes}\n")
-    txt_file.write(f"-------------------------\n")
+    txt_file.write("Election Results\n\n")
+    txt_file.write(f"-------------------------\n\n")
+    txt_file.write(f"Total Votes: {total_votes}\n\n")
+    txt_file.write(f"-------------------------\n\n")
 
     # Loop through the candidates to determine vote percentages and identify the winner
     for candidate, votes in candidate_vote_total.items():
@@ -80,7 +80,8 @@ with open(file_to_output, "w") as txt_file:
         # Get the vote count and calculate the percentage
         vote_percentage = (votes / total_votes) * 100
         print(f"{candidate}: {vote_percentage:.3f}% ({votes})\n")
-        txt_file.write(f"{candidate}: {vote_percentage:.3f}% ({votes})\n")
+        txt_file.write(f"{candidate}: {vote_percentage:.3f}% ({votes})\n\n")
+    
 
         # Update the winning candidate if this one has more votes
         if votes > winning_vote_counter:
