@@ -59,16 +59,17 @@ with open(file_to_load) as election_data:
 with open(file_to_output, "w") as txt_file:
 
     # Print the total vote count (to terminal)
-    print("Election Results")
+    print("Election Results]\n")
     print(f"-------------------------\n")
     print(f"Total Votes: {total_votes}\n")
     print(f"-------------------------\n")
     
-    txt_file.write("Election Results\n")
-    txt_file.write(f"-------------------------\n")
+    
     
 
     # Write the total vote count to the text file
+    txt_file.write("Election Results\n")
+    txt_file.write(f"-------------------------\n")
     txt_file.write(f"Total Votes: {total_votes}\n")
     txt_file.write(f"-------------------------\n")
 
@@ -90,13 +91,14 @@ with open(file_to_output, "w") as txt_file:
         
 
     # Generate and print the winning candidate summary
-    print(f"-------------------------\n")
-    txt_file.write("-------------------------\n")
-    print(f"Winner: {winning_candidate}\n")
-    txt_file.write(f"Winner: {winning_candidate}\n")
-    print(f"-------------------------\n")
-    txt_file.write("-------------------------\n")
-    
-    
+    summary = f"""
+-------------------------
+
+Winner: {winning_candidate}
+
+-------------------------
+    """
+    print(summary)
 
     # Save the winning candidate summary to the text file
+    txt_file.write(summary)
