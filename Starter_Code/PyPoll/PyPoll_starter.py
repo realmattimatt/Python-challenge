@@ -63,9 +63,14 @@ with open(file_to_output, "w") as txt_file:
     print(f"-------------------------\n")
     print(f"Total Votes: {total_votes}\n")
     print(f"-------------------------\n")
+    
+    txt_file.write("Election Results\n")
+    txt_file.write(f"-------------------------\n")
+    
 
     # Write the total vote count to the text file
     txt_file.write(f"Total Votes: {total_votes}\n")
+    txt_file.write(f"-------------------------\n")
 
     # Loop through the candidates to determine vote percentages and identify the winner
     for candidate, votes in candidate_vote_total.items():
@@ -86,8 +91,12 @@ with open(file_to_output, "w") as txt_file:
 
     # Generate and print the winning candidate summary
     print(f"-------------------------\n")
+    txt_file.write("-------------------------\n")
     print(f"Winner: {winning_candidate}\n")
-    print(f"-------------------------\n")
     txt_file.write(f"Winner: {winning_candidate}\n")
+    print(f"-------------------------\n")
+    txt_file.write("-------------------------\n")
+    
+    
 
     # Save the winning candidate summary to the text file
