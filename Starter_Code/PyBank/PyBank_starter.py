@@ -4,11 +4,11 @@
 # Dependencies
 import csv
 import os
-# Uncomment line 8 and 9 as needed. 
+# Uncomment or comment lines 10 and 11 as needed. 
 # A path error was encountered on my personal device. I needed to use the os.getcwd and 
-# os.getcwd methods to run directly in VS Code terminal. Works perfect in Bash without lines 10 and 11.
-print(os.getcwd())
-os.chdir(r"c:/Users/mnmat/OneDrive/Desktop/Python-challenge/Starter_Code/PyBank")
+# os.getcwd methods to run directly in VS Code terminal. Works perfect in Bash without lines 10 and 11. (Update..)  After opening the folder in VS code per office hours. Someone had a similiar issue. Had to open the specific folder in VS Code. 
+# print(os.getcwd())
+# os.chdir(r"c:/Users/mnmat/OneDrive/Desktop/Python-challenge/Starter_Code/PyBank")
 
 # Files to load and output (update with correct file paths)
 #file_to_load = r"Resources\budget_data.csv"
