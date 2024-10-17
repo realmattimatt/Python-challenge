@@ -77,14 +77,15 @@ average_change = sum(changes) / len(changes) if changes else 0
 
 
 # Generate the output summary
+# Added an extra newline to each to seperate more. It appeared that way on the example.
 output = (
-    f"Financial Analysis\n"
-    f"----------------------------\n"
-    f"Total Months: {total_months}\n"
-    f"Total: ${total_profit_loss}\n"
-    f"Average Change: ${average_change:.2f}\n"
-    f"Greatest Increase in Profits: {greatest_increase[0]} (${greatest_increase[1]})\n"
-    f"Greatest Decrease in Profits: {greatest_decrease[0]} (${greatest_decrease[1]})\n"
+    f"Financial Analysis\n\n"
+    f"----------------------------\n\n"
+    f"Total Months: {total_months}\n\n"
+    f"Total: ${total_profit_loss}\n\n"
+    f"Average Change: ${average_change:.2f}\n\n"
+    f"Greatest Increase in Profits: {greatest_increase[0]} (${greatest_increase[1]})\n\n"
+    f"Greatest Decrease in Profits: {greatest_decrease[0]} (${greatest_decrease[1]})\n\n"
 )
 
 # Print the output
