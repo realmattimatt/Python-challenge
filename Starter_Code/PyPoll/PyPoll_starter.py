@@ -5,11 +5,11 @@
 import csv
 import os
 
-# Uncomment line 11 and 12 as needed. 
+# Uncomment or comment lines 11 and 12 as needed. 
 # A path error was encountered on my personal device. I needed to use the os.getcwd and 
-# os.getcwd methods to run directly in VS Code. Works perfect in Bash without lines 11 and 12.
-print(os.getcwd())
-os.chdir(r"c:/Users/mnmat/OneDrive/Desktop/Python-challenge/Starter_Code/PyPoll")
+# os.getcwd methods to run directly in VS Code terminal. Works perfect in Bash without lines 11 and 12. (Update..)  After opening the folder in VS code per office hours. Someone had a similiar issue. Had to open the specific folder in VS Code. 
+# print(os.getcwd())
+# os.chdir(r"c:/Users/mnmat/OneDrive/Desktop/Python-challenge/Starter_Code/PyPoll")
 
 # Files to load and output (update with correct file paths)
 file_to_load = os.path.join("Resources", "election_data.csv")  # Input file path
